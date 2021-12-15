@@ -1,44 +1,36 @@
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import {createUseStyles} from 'react-jss';
-import { Link } from '@mui/material';
-
-const styling = createUseStyles({
-    nav:{
-        display:"inline-flex",
-        textDecoration:'none'
-    }
-})
+import { Link, Tooltip } from '@mui/material';
 
 
 export default function Navbar(){
-    let styles= styling();
     return(
         <Container maxWidth="xl">
             <Box
             height={50}
-            // bgcolor="#FF5"
             sx={{ flexGrow: 1 }}
             >
-                <Grid container spacing={2} mt={0} sx={{ flexGrow: 1 }} class={styles.nav}>
+                <Grid container spacing={2} mt={0} sx={{ flexGrow: 1 }} display='inline-flex'>
                     <Grid item mt='auto' mb='auto'>
                         <img src='dropitlogo.bmp'></img>
                     </Grid>
-                    
-                        <Grid container width="fit-content" mt='auto' mb='auto' flexDirection='row-reverse' sx={{ flexGrow: 1 }} >
-                            <Grid item>
-                                <Link mr={2}>
+                    <Grid container width="fit-content" mt='auto' mb='auto' flexDirection='row-reverse' sx={{ flexGrow: 1 }} >
+                        <Grid item>
+                            <Tooltip title='Support'>
+                                <Link href='#' mr={2} textDecoration='none' underline='none' color='#000' fontWeight={900}>
+                                    Support
+                                </Link>
+                            </Tooltip>
+                        </Grid>
+                        <Grid item>
+                            <Tooltip title='Contact'>
+                                <Link href='#' mr={8} textDecoration='none' underline='none' color='#000' fontWeight={900}>
                                     Contact
                                 </Link>
-                            </Grid>
-                            <Grid item>
-                                <Link mr={2}>
-                                Support
-                                </Link>
-                            </Grid>
+                            </Tooltip>
                         </Grid>
-                    
+                    </Grid>
                 </Grid>
             </Box>
         </Container>
