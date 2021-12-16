@@ -19,14 +19,14 @@ export default function Navbar(){
                     <Grid container width="fit-content" mt='auto' mb='auto' flexDirection='row-reverse' sx={{ flexGrow: 1 }} >
                         <Grid item>
                             <Tooltip title='Support'>
-                                <Link href='#' mr={2} textDecoration='none' underline='none' color='#000' fontWeight={900}>
+                                <Link href='#' mr={2} textDecoration='none' underline='none' color='#000' fontSize={14} fontWeight={800}>
                                     Support
                                 </Link>
                             </Tooltip>
                         </Grid>
                         <Grid item>
                             <Tooltip title='Contact'>
-                                <Link href='#' mr={8} textDecoration='none' underline='none' color='#000' fontWeight={900}>
+                                <Link href='#' mr={8} textDecoration='none' underline='none' color='#000' fontSize={14} fontWeight={800}>
                                     Contact
                                 </Link>
                             </Tooltip>
