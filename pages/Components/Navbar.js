@@ -9,6 +9,7 @@ export default function Navbar(){
         <Container maxWidth="xl">
             <Box
             height={50}
+            zIndex={5}
             sx={{ flexGrow: 1 }}
             >
                 <Grid container spacing={2} mt={0} sx={{ flexGrow: 1 }} display='inline-flex'>
