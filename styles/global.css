@@ -9,3 +9,12 @@ body{
     font-family: 'regular';
     overflow-y: hidden;
 }
+
+@keyframes bg {
+    0%{
+        transform: translate(400px,-150px)
+    }
+    100%{
+        transform: translate(500px,-10px)
+    }
+}
