@@ -4,74 +4,57 @@ import {createUseStyles} from 'react-jss'
 const styles = createUseStyles({
     Background:{
         zIndex: "-1",
-        display:'block',
-        overflow:"hidden",
+        display:'flex',
         width:"100vw",
         maxWidth:"100vw",
-        // position: "absolute",
-        // marginTop: '10vh',
-        // marginBottom: 'auto', 
-        // marginLeft:"25vw",
-        // marginRight:"auto",
-        // height:'fit-content',
-        // width:"fit-content",
-        // // backgroundColor:"#5F5",
-        // width: "600px",
-        // height:"600px",
-        filter: "blur(180px)",
-        // transform: "rotate(50deg)",
-        // transform: "translate(300px,270px)",
-        // overflowX: "hidden",
-        // animationName: "bg",
+        position:"absolute",
+        alignItems:"center",
+        flexDirection:"column",
+        height:"100vh",
+        justifyContent:"center"
     },
     circle:{
-        position: "absolute",
+        position: "fixed",
+        filter: "blur(180px)",
         zIndex:"-3",
         display:"block",
         width: 490.18,
         height: 468.9,
         background: "#FF5050",
-        borderRadius: "272.5px",
-        transform: "rotate(-2.43deg)",
-        transform: "translate(170px,0px)",
-        animationName: '$bg',
-        animationTimingFunction: 'ease-in-out',
+        borderRadius: "100%",
+        transform: "translate(100px,-150px)",
     },
     circle1:{
-        position: "absolute",
+        position: "fixed",
+        filter: "blur(180px)",
         zIndex:"-2",
         display:"block",
-        position: "absolute",
         width: 506.1,
         height: 495.9,
         borderRadius: "100%",
         background: "#49D3FF",
-        transform: "rotate(45deg)",
-        transform: "translate(0px,70px)"
+        transform: "translate(-120px,10px)",
+        
     },
     circle2:{
-        position: "absolute",
+        position: "fixed",
+        filter: "blur(180px)",
         zIndex:"-1",
         width: 368.65,
         height: 388.19,
         background: "#7CFFA9",
-        borderRadius: 207.5,
-        transform: "rotate(45deg)",
-        transform: "translate(270px,250px)"
-    },
-    '@keyframes bg': {
-        from: {transform: "translate(400px,-150px)"},
-        to: {transform: "translate(550px,-150px)"}
+        borderRadius: "100%",
+        transform: "translate(130px,150px)"
     },
 })
 
 export default function Background(){
     let classes = styles();
     return(
-        <Container maxWidth="xl" className={classes.Background}>
-            <span className={classes.circle}></span>
-            <span className={classes.circle1}></span>
-            <span className={classes.circle2}></span>
+        <Container  maxWidth="xl" className={classes.Background}>
+            <div className={classes.circle}></div>
+            <div className={classes.circle1}></div>
+            <div className={classes.circle2}></div>
         </Container>
     )
 }

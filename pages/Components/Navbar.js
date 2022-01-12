@@ -6,7 +6,7 @@ import { Link, Tooltip } from '@mui/material';
 
 export default function Navbar(){
     return(
-        <Container maxWidth="xl">
+        <Container maxWidth="xl" justify='center'>
             <Box
             height={50}
             zIndex={5}

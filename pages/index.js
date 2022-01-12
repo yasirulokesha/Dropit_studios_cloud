@@ -10,7 +10,7 @@ export default function Home() {
       <Navbar/>
       <Background/>
       <Hero/>
-      <Tagline/>
+      {/* <Tagline/> */}
     </>
       
   )
