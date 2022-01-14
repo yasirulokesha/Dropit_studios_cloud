@@ -2,6 +2,17 @@
     font-family: 'regular';
     src: url(../public/Fonts/Roboto-Regular.ttf);
 }
+
+@font-face {
+    font-family: 'medium';
+    src: url(../public/Fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'light';
+    src: url(../public/Fonts/Roboto-Light.ttf);
+}
+
 html{
     width: "100vw";
     overflow: hidden;
