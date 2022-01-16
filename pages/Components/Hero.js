@@ -1,9 +1,11 @@
 import {createUseStyles} from 'react-jss';
-import {Container, Grid, Typography, IconButton} from '@mui/material';
+import {Container, Grid, Typography, IconButton, Stack} from '@mui/material';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import Button from '@mui/material/Button';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
 const styles = createUseStyles({
     hero:{
@@ -15,6 +17,14 @@ const styles = createUseStyles({
         flexDirection:"row",
         height:"100vh",
         justifyContent:"space-between"
+    },
+    coloredRed:{
+        backgroundColor:"#FF5050",
+        boxShadow:"none"
+    },
+    coloredBlue:{
+        backgroundColor:"#49D3FF",
+        boxShadow:"none"
     }
 })
 
@@ -31,8 +41,7 @@ export default function Hero(){
                     <Typography width="70%" fontSize="15pt" fontFamily="light" marginTop="30px">
                             It’s a greate place to use scripting , filming, Videographic Contents and all of creative things of IT.
                     </Typography>
-                    <Grid container>
-                        <Grid item>
+                    <Stack direction="row" spacing={2}>
                             <IconButton>
                                 <YouTubeIcon fontSize="large"/>
                             </IconButton>
@@ -45,13 +54,27 @@ export default function Hero(){
                             <IconButton >
                                 <InstagramIcon fontSize="large"/>
                             </IconButton>
+                    </Stack>
+
+                    <Stack direction="row" spacing={2} mt="20px">
+                        <Grid item>
+                            <Button  variant="contained" href="/start" color="error" className={classes.coloredRed} size="medium" endIcon={<KeyboardArrowRightIcon/>}>
+                                Start
+                            </Button>
                         </Grid>
-                    </Grid>
+                        <Grid item >
+                            <Button className={classes.coloredBlue} variant="contained" href="/start" size="medium">
+                                Contact us
+                            </Button>
+                        </Grid>
+                    </Stack>
+                </Grid>
+                <Grid item>
+                    <Typography>
+                        Under Constructions
+                    </Typography>
                 </Grid>
             </Grid>
-            <Typography>
-                Hmmm
-            </Typography>
         </Container>
     )
 }
