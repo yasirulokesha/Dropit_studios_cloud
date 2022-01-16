@@ -1,5 +1,9 @@
 import {createUseStyles} from 'react-jss';
-import {Container, Grid, Typography} from '@mui/material'
+import {Container, Grid, Typography, IconButton} from '@mui/material';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const styles = createUseStyles({
     hero:{
@@ -24,9 +28,25 @@ export default function Hero(){
                     <Typography fontSize="78pt" fontFamily="medium" lineHeight="70%">
                         Dropit Studios
                     </Typography>
-                    <Typography width="70%" fontSize="15pt" fontFamily="light" marginTop="40px">
+                    <Typography width="70%" fontSize="15pt" fontFamily="light" marginTop="30px">
                             It’s a greate place to use scripting , filming, Videographic Contents and all of creative things of IT.
                     </Typography>
+                    <Grid container>
+                        <Grid item>
+                            <IconButton>
+                                <YouTubeIcon fontSize="large"/>
+                            </IconButton>
+                            <IconButton >
+                                <FacebookRoundedIcon fontSize="large"/>
+                            </IconButton>
+                            <IconButton >
+                                <TwitterIcon fontSize="large"/>
+                            </IconButton>
+                            <IconButton >
+                                <InstagramIcon fontSize="large"/>
+                            </IconButton>
+                        </Grid>
+                    </Grid>
                 </Grid>
             </Grid>
             <Typography>
