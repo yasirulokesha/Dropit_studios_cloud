@@ -6,6 +6,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import Button from '@mui/material/Button';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import ReactPlayer from 'react-player';
 
 const styles = createUseStyles({
     hero:{
@@ -32,9 +33,9 @@ export default function Hero(){
     let classes = styles();
     return(
         <Container maxWidth="xl" className={classes.hero}>
-            <Grid container spacing={2}>
+            <Grid container spacing={2} >
                 <Grid item>
-                    <img src='Logo-covered.png'></img>
+                    <img src='studio_logo.png'></img>
                     <Typography fontSize="78pt" fontFamily="medium" lineHeight="70%">
                         Dropit Studios
                     </Typography>
@@ -69,12 +70,17 @@ export default function Hero(){
                         </Grid>
                     </Stack>
                 </Grid>
-                <Grid item>
-                    <Typography>
-                        Under Constructions
-                    </Typography>
-                </Grid>
             </Grid>
+            <Grid item >
+                    <ReactPlayer
+                        url="https://ak.picdn.net/shutterstock/videos/1053283298/preview/stock-footage-abstract-seamless-loop-of-d-render-neon-circle-blue-and-purple-neon-circles-abstract-futuristic.webm"
+                        controls={true}
+                        play={true}
+                        loop={true}
+                    >
+                    </ReactPlayer>
+
+                </Grid>
         </Container>
     )
 }

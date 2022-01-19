@@ -26,6 +26,10 @@ body{
     overflow-x: hidden;
 }
 
+video{
+    border-radius: 10px;
+}
+
 @keyframes bg {
     0%{
         transform: translate(400px,-150px)
