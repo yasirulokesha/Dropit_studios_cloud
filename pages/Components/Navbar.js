@@ -6,7 +6,7 @@ import { Link, Tooltip } from '@mui/material';
 
 export default function Navbar(){
     return(
-        <Container maxWidth="xl" justify='center'>
+        <Container maxWidth="xl" justify='center' >
             <Box
             height={50}
             zIndex={5}
@@ -28,6 +28,13 @@ export default function Navbar(){
                             <Tooltip title='Contact'>
                                 <Link href='#' mr={8} textDecoration='none' underline='none' color='#000' fontSize={14} fontWeight={800}>
                                     Contact
+                                </Link>
+                            </Tooltip>
+                        </Grid>
+                        <Grid item>
+                            <Tooltip title='Gallery'>
+                                <Link href='/gallery' mr={8} textDecoration='none' underline='none' color='#000' fontSize={14} fontWeight={800}>
+                                    Gallery
                                 </Link>
                             </Tooltip>
                         </Grid>
