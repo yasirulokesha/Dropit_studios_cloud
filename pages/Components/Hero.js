@@ -16,7 +16,7 @@ const styles = createUseStyles({
         // position:"absolute",
         alignItems:"center",
         flexDirection:"row",
-        height:"100vh",
+        height:"90vh",
         justifyContent:"space-between"
     },
     coloredRed:{
@@ -36,7 +36,7 @@ export default function Hero(){
             <Grid container spacing={2} >
                 <Grid item>
                     <img src='studio_logo.png'></img>
-                    <Typography fontSize="78pt" fontFamily="medium" lineHeight="70%">
+                    <Typography fontSize="78pt" fontFamily="medium" lineHeight="85%">
                         Dropit Studios
                     </Typography>
                     <Typography width="70%" fontSize="15pt" fontFamily="light" marginTop="30px">
